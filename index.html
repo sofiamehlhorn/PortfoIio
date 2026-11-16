@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sofia Mehlhorn | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background: #f8f9fa;
+    }
+
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      max-width: 500px;
+      margin: 0 auto 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: white;
+      color: #667eea;
+      padding: 12px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+      color: #333;
+      border-bottom: 3px solid #667eea;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .about p {
+      font-size: 1.1rem;
+      color: #555;
+      max-width: 700px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+    }
+
+    .card-content {
+      padding: 25px;
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .card p {
+      color: #666;
+      margin-bottom: 18px;
+      font-size: 0.95rem;
+    }
+
+    .card-links {
+      display: flex;
+      gap: 12px;
+    }
+
+    .card-links a {
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+
+    .demo {
+      background: #667eea;
+      color: white;
+    }
+
+    .demo:hover {
+      background: #5a6fd6;
+    }
+
+    .code {
+      background: #f0f0f0;
+      color: #333;
+    }
+
+    .code:hover {
+      background: #e0e0e0;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      background: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: 500;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      color: #555;
+    }
+
+    footer {
+      background: #1a1a1a;
+      color: #aaa;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: #667eea;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      header {
+        padding: 60px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sofia Mehlhorn</h1>
+    <p>Desarrolladora front-end en formación. Aprendiendo HTML, CSS y JavaScript creando proyectos reales.</p>
+    <a href="https://github.com/sofiamehlhorn" class="btn" target="_blank">Ver mi GitHub</a>
+  </header>
+
+  <div class="container">
+
+    <section class="about">
+      <h2>Sobre mí</h2>
+      <p>
+        Hola, soy Sofia. Estoy aprendiendo desarrollo web y subiendo mis proyectos a GitHub 
+        mientras practico HTML, CSS y JavaScript. Me gusta crear cosas interactivas y seguir mejorando.
+      </p>
+    </section>
+
+    <section>
+      <h2>Proyectos</h2>
+      <div class="projects">
+
+        <div class="card">
+          <div class="card-content">
+            <h3>Color Game</h3>
+            <p>Juego de adivinar colores. Practiqué manipulación del DOM, eventos y lógica en JavaScript.</p>
+            <div class="card-links">
+              <a href="https://sofiamehlhorn.github.io/Color.Game/" class="demo" target="_blank">Demo</a>
+              <a href="https://github.com/sofiamehlhorn/Color.Game" class="code" target="_blank">Código</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <h3>Piedra, Papel o Tijera</h3>
+            <p>Clásico juego contra la computadora. Trabajé con lógica de condiciones y resultados aleatorios.</p>
+            <div class="card-links">
+              <a href="https://sofiamehlhorn.github.io/Unidad-9/" class="demo" target="_blank">Demo</a>
+              <a href="https://github.com/sofiamehlhorn/Unidad-9" class="code" target="_blank">Código</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <h3>U10 - Parte 1</h3>
+            <p>Ejercicio de JavaScript de la unidad 10. Práctica de funciones y manipulación de elementos.</p>
+            <div class="card-links">
+              <a href="https://sofiamehlhorn.github.io/U10-parte1/" class="demo" target="_blank">Demo</a>
+              <a href="https://github.com/sofiamehlhorn/U10-parte1" class="code" target="_blank">Código</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <h3>U10 - Parte 2</h3>
+            <p>Continuación de la unidad 10. Más práctica con JavaScript y eventos.</p>
+            <div class="card-links">
+              <a href="https://sofiamehlhorn.github.io/U10-parte2/" class="demo" target="_blank">Demo</a>
+              <a href="https://github.com/sofiamehlhorn/U10-parte2" class="code" target="_blank">Código</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Habilidades</h2>
+      <div class="skills">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">Git & GitHub</span>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>Hecho por Sofia Mehlhorn · <a href="https://github.com/sofiamehlhorn" target="_blank">github.com/sofiamehlhorn</a></p>
+  </footer>
+
+</body>
+</html>
